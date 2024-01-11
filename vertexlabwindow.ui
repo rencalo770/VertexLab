@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>VertexLabWindow</class>
+ <widget class="QMainWindow" name="VertexLabWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>689</width>
+    <height>589</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>VertexLabWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="verticalLayout"/>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>689</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menucreate">
+    <property name="title">
+     <string>create</string>
+    </property>
+    <addaction name="actionbottle"/>
+    <addaction name="separator"/>
+    <addaction name="actioncloud_point"/>
+   </widget>
+   <addaction name="menucreate"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionbottle">
+   <property name="text">
+    <string>bottle</string>
+   </property>
+  </action>
+  <action name="actioncloud_point">
+   <property name="text">
+    <string>cloud point</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>actionbottle</sender>
+   <signal>triggered()</signal>
+   <receiver>VertexLabWindow</receiver>
+   <slot>drawBottle()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>344</x>
+     <y>294</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>drawBottle()</slot>
+ </slots>
+</ui>

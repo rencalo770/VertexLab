@@ -1,0 +1,21 @@
+<Menu>
+  <MenuItem name="Data Exchange">
+    <MenuItem name="Export">
+      <Sample name="BREP" function="BrepExportSample"/>
+      <Sample name="STEP" function="StepExportSample"/>    
+      <Sample name="IGES" function="IgesExportSample"/>
+      <Sample name="STL"  function="StlExportSample"/>
+      <Sample name="VRML" function="VrmlExportSample"/>
+		<Sample name="OBJ" function="ObjExportSample"/>
+		<Sample name="Image" function="ImageExportSample"/>
+    </MenuItem>
+    <MenuItem name="Import">
+      <Sample name="BREP" function="BrepImportSample"/>
+      <Sample name="STEP" function="StepImportSample"/>
+      <Sample name="IGES" function="IgesImportSample"/>
+	  <Sample name="STL" function="StlImportSample"/>
+	  <Sample name="VRML" function="VrmlImportSample"/>
+	  <Sample name="OBJ" function="ObjImportSample"/>
+	</MenuItem>
+  </MenuItem>
+</Menu>
